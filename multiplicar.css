@@ -84,6 +84,8 @@ main{
 /* Header */
 
 header{
+    width:100%;
+    max-width:550px;
 
     margin-bottom:30px;
 
@@ -96,7 +98,8 @@ header{
 /* Mensaje */
 
 .mensaje{
-    margin: 20px 20px 70px 0px;
+    margin:20px auto 50px;
+    padding:0 15px;  
 
     max-width:450px;
 
@@ -143,7 +146,7 @@ header{
 
 #txtTabla{
 
-    width:180px;
+    width:min(180px,90%);
 
     padding:18px;
 
@@ -198,6 +201,8 @@ header{
     color:white;
 
     padding:18px 30px;
+    
+
 
     font-size:14px;
 
@@ -266,6 +271,8 @@ table{
     width:100%;
 
     border-collapse:collapse;
+    min-width:300px;
+
 }
 
 /* Encabezados */
@@ -301,7 +308,9 @@ tr:hover{
     background:rgba(255,0,0,0.12);
 }
 .mensajeCrea{
-    margin: 10px 10px 40px 80px;
+     margin:0 auto 40px;
+     padding:0, 15px;
+
 
     max-width:350px;
 
@@ -327,6 +336,7 @@ tr:hover{
 @media screen and (max-width: 900px){
 
     body{
+        flex-direction:column;
 
         padding:30px 15px;
 
@@ -392,6 +402,7 @@ tr:hover{
     }
 
     .btn-probar{
+        ;
 
         width:260px;
 
@@ -412,6 +423,8 @@ tr:hover{
     }
 
     table{
+        min-width:300px;
+
 
         min-width:100%;
     }
@@ -440,6 +453,7 @@ tr:hover{
 @media screen and (max-width: 600px){
 
     body{
+        flex-direction:column;
 
         padding:20px 10px;
 
@@ -465,7 +479,7 @@ tr:hover{
 
         padding:0 5px;
 
-        font-size:7px;
+        font-size:9px;
 
         line-height:2.3;
     }
@@ -509,6 +523,7 @@ tr:hover{
     }
 
     .btn-probar{
+        
 
         width:100%;
 
@@ -535,11 +550,13 @@ tr:hover{
     table{
 
         width:100%;
+        min-width:300px;
+
     }
 
     th{
 
-        font-size:8px;
+        font-size:10px;
 
         padding:10px 6px;
 
@@ -548,7 +565,7 @@ tr:hover{
 
     td{
 
-        font-size:7px;
+        font-size:6px;
 
         padding:10px 6px;
 
@@ -592,9 +609,9 @@ tr:hover{
 
     .btn-probar{
 
-        font-size:7px;
+        width:100%;
+    max-width:300px;
 
-        padding:12px;
     }
 
     th{
@@ -610,7 +627,7 @@ tr:hover{
     .h6Mensaje{
         h6{
 
-        font-size:7px;
+        font-size:9px;
     }
        padding:12px;
 
