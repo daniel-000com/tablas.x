@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla del 3</title>
     <link rel="stylesheet" href="multiplicar.css">
+    <script src="multiplicar.js" defer></script>
+    <script src="multiplicarUtil.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="mensaje">
 
-    <div class="contenedor">
-        <button class="boton">PROBAR</button>
+        <p>
+            Prueba la tabla de multiplicar que quieras,
+            solo coloca el número de la tabla y da click en PROBAR
+        </p>
+        </div>
+        <h5>
+            coloca el numero de la </h5>
+        <h5>
+            tabla que quieres ver </h5>
+            <h5>
+            <p class="flecha">↓</p>
+            </h5>
+        <input type="number" id="txtTabla" placeholder="tabla del ?">
+        <h2><button onclick="generarTablas()" class="btn-probar">PROBAR</button></h2>
+       
+    </header>
 
-        <h1>Tabla del 3</h1>
+    <main>
+        <h6 class="mensajeCrea"> creado por: Daniel Orrala</h6>
+        <h1 id="h1Titulo">Tabla del 3</h1>
+
+      <div class="contenedor">
 
         <table>
             <thead>
@@ -19,21 +41,21 @@
                     <th>Operación</th>
                     <th>Resultado</th>
                 </tr>
-            </thead>
-            <tbody>
-                <tr><td>3 × 1</td><td>3</td></tr>
-                <tr><td>3 × 2</td><td>6</td></tr>
-                <tr><td>3 × 3</td><td>9</td></tr>
-                <tr><td>3 × 4</td><td>12</td></tr>
-                <tr><td>3 × 5</td><td>15</td></tr>
-                <tr><td>3 × 6</td><td>18</td></tr>
-                <tr><td>3 × 7</td><td>21</td></tr>
-                <tr><td>3 × 8</td><td>24</td></tr>
-                <tr><td>3 × 9</td><td>27</td></tr>
-                <tr><td>3 × 10</td><td>30</td></tr>
-            </tbody>
-        </table>
-    </div>
-
+             </thead>
+             <tbody id="divContenido">
+                <tr><td>3 x 1</td><td>3</td></tr>
+                <tr><td>3 x 2</td><td>6</td></tr>
+                <tr><td>3 x 3</td><td>9</td></tr>
+                <tr><td>3 x 4</td><td>12</td></tr>
+                <tr><td>3 x 5</td><td>15</td></tr>
+                <tr><td>3 x 6</td><td>18</td></tr>
+                <tr><td>3 x 7</td><td>21</td></tr>
+                <tr><td>3 x 8</td><td>24</td></tr>
+                <tr><td>3 x 9</td><td>27</td></tr>
+                <tr><td>3  10</td><td>30</td></tr>
+             </tbody>
+         </table>
+     </div>
+  </main>
 </body>
 </html>
